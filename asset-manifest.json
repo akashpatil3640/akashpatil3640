@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.2c8b7fcc.js",
-    "static/media/dp.jpg": "/static/media/dp.ddbf96661e4a804b3c2a.jpg",
-    "static/media/47.png": "/static/media/47.eb691fcf91dddb37127c.png",
-    "static/media/68.png": "/static/media/68.384a2e5c14b89eb3318f.png",
-    "static/media/Alight.png": "/static/media/Alight.120d9bc95fde078ebaf4.png",
-    "static/media/67.png": "/static/media/67.1643c05b7e1dd0ebfb58.png",
-    "static/media/62.jpg": "/static/media/62.109d2d22aa8708780046.jpg",
-    "static/media/70.jpg": "/static/media/70.15db7389d6dbbdc35d8a.jpg",
-    "static/media/ST.png": "/static/media/ST.ecef925122582e99081a.png",
-    "static/media/64.jpg": "/static/media/64.e0500866e6d5ed0c647c.jpg",
-    "static/media/todo.png": "/static/media/todo.a7d87bf2b872f93ae982.png",
-    "index.html": "/index.html",
-    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.2c8b7fcc.js.map": "/static/js/main.2c8b7fcc.js.map"
+    "main.css": "/akashpatil3640/static/css/main.e6c13ad2.css",
+    "main.js": "/akashpatil3640/static/js/main.e3380c37.js",
+    "static/media/dp.jpg": "/akashpatil3640/static/media/dp.ddbf96661e4a804b3c2a.jpg",
+    "static/media/47.png": "/akashpatil3640/static/media/47.eb691fcf91dddb37127c.png",
+    "static/media/68.png": "/akashpatil3640/static/media/68.384a2e5c14b89eb3318f.png",
+    "static/media/Alight.png": "/akashpatil3640/static/media/Alight.120d9bc95fde078ebaf4.png",
+    "static/media/67.png": "/akashpatil3640/static/media/67.1643c05b7e1dd0ebfb58.png",
+    "static/media/62.jpg": "/akashpatil3640/static/media/62.109d2d22aa8708780046.jpg",
+    "static/media/70.jpg": "/akashpatil3640/static/media/70.15db7389d6dbbdc35d8a.jpg",
+    "static/media/ST.png": "/akashpatil3640/static/media/ST.ecef925122582e99081a.png",
+    "static/media/64.jpg": "/akashpatil3640/static/media/64.e0500866e6d5ed0c647c.jpg",
+    "static/media/todo.png": "/akashpatil3640/static/media/todo.a7d87bf2b872f93ae982.png",
+    "index.html": "/akashpatil3640/index.html",
+    "main.e6c13ad2.css.map": "/akashpatil3640/static/css/main.e6c13ad2.css.map",
+    "main.e3380c37.js.map": "/akashpatil3640/static/js/main.e3380c37.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.2c8b7fcc.js"
+    "static/js/main.e3380c37.js"
   ]
 }
