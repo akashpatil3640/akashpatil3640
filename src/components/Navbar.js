@@ -1,10 +1,8 @@
-import {useEffect} from 'react';
 import {
     Box,
     Flex,
     Text,
     IconButton,
-    Image,
     Stack,
     Collapse,
     Icon,
@@ -15,7 +13,6 @@ import {
     useColorModeValue,
     useBreakpointValue,
     useDisclosure,
-    useColorMode,
   } from '@chakra-ui/react';
   import {
     HamburgerIcon,
@@ -23,9 +20,7 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
-  import dp from './Naruto/dp.jpg'
 
-  import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
   export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();

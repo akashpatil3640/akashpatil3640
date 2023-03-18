@@ -2,12 +2,10 @@ import Navbar from "./Navbar.js";
 import Footer from "./Footer.js";
 import image from "./Naruto/68.png";
 import image2 from "./Naruto/70.jpg"
-import Type from "./Type.js"
-import TypeName from "./TypeName.js";
-import { Box ,Grid,GridItem,Heading,Text,Image ,Button} from "@chakra-ui/react"
+import { Box ,Grid,GridItem,Text,Image ,Button} from "@chakra-ui/react"
 import { useMediaQuery } from '@chakra-ui/react'
 import dp from './Naruto/dp.jpg'
-import { FaJava,FaReact,FaNodeJs } from "react-icons/fa";function AboutMe(){
+function AboutMe(){
     const [isLargerThan800] = useMediaQuery('(min-width: 800px)');
     return (
         

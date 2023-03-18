@@ -4,7 +4,7 @@ import image from "./Naruto/62.jpg";
 import image2 from "./Naruto/64.jpg"
 import Type from "./Type.js"
 import TypeName from "./TypeName.js";
-import { Box ,Grid,GridItem,Heading,Text } from "@chakra-ui/react"
+import { Box ,Grid,GridItem,Heading } from "@chakra-ui/react"
 import { useMediaQuery } from '@chakra-ui/react'
 
 

@@ -13,7 +13,7 @@ import {
   GridItem
 } from '@chakra-ui/react';
 import { ReactNode } from 'react';
-import { FaInstagram, FaTwitter, FaGithub ,FaWhatsapp,FaLinkedin,FaMail} from 'react-icons/fa';
+import { FaInstagram, FaTwitter, FaGithub ,FaWhatsapp,FaLinkedin} from 'react-icons/fa';
 import { FiMail } from "react-icons/fi";
 import dp from './Naruto/dp.jpg'
 

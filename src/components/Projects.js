@@ -2,24 +2,16 @@ import Navbar from "./Navbar.js";
 import Footer from "./Footer.js";
 import image from "./Naruto/47.png";
 import image2 from "./Naruto/67.png"
-import Type from "./Type.js"
-import TypeName from "./TypeName.js";
-import { Box ,Grid,GridItem,Heading,Text,Card,CardBody,CardFooter,Divider,Stack,Button,ButtonGroup,Image,SimpleGrid,CardHeader } from "@chakra-ui/react"
+import { Box ,Grid,GridItem,Text,Button,Image } from "@chakra-ui/react"
 import { useMediaQuery } from '@chakra-ui/react'
 
 import {
-    Avatar,
-    AvatarGroup,
     Badge,
     Flex,
-    Icon,
     DarkMode,
     useColorModeValue,
 } 
 from "@chakra-ui/react";
-  // Assets
-import { MdPeople } from "react-icons/md";
-import { IoEllipsisHorizontalSharp } from "react-icons/io5";
 
 import ST from "./screenShots/ST.png";
 import AP from "./screenShots/Alight.png";
@@ -33,8 +25,6 @@ function Projects(){
 
     let boxBg = useColorModeValue("white !important", "gray.700 !important");
   let mainText = useColorModeValue("gray.800", "white");
-  let iconBox = useColorModeValue("gray.100", "whiteAlpha.200");
-  let iconColor = useColorModeValue("brand.200", "white");
 
 
     return (
