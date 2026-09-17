@@ -10,7 +10,6 @@ import {
     Popover,
     PopoverTrigger,
     PopoverContent,
-    useColorModeValue,
     useBreakpointValue,
     useDisclosure,
   } from '@chakra-ui/react';
@@ -33,14 +32,14 @@ import {
     return (
       <Box >
         <Flex
-          bg={useColorModeValue('white', 'gray.800')}
-          color={useColorModeValue('gray.600', 'white')}
+          bg={'#111516'}
+          color={'#d6dde2'}
           minH={'60px'}
           py={{ base: 2 }}
           px={{ base: 4 }}
           borderBottom={1}
           borderStyle={'solid'}
-          borderColor={useColorModeValue('gray.200', 'gray.900')}
+          borderColor={'#353033'}
           align={'center'}>
           <Flex
             flex={{ base: 1, md: 'auto' }}
@@ -52,6 +51,11 @@ import {
                 isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
               }
               variant={'ghost'}
+              color={'#d6dde2'}
+              _hover={{ bg: '#2c1d21', color: '#f08080' }}
+              _active={{ bg: '#392127' }}
+              _focusVisible={{ boxShadow: '0 0 0 2px #f08080' }}
+              aria-expanded={isOpen}
               aria-label={'Toggle Navigation'}
             />
           </Flex>
@@ -59,7 +63,7 @@ import {
             <Text
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
-              color={useColorModeValue('gray.800', 'white')}>
+              color={'#f08080'}>
               Akash Patil
 
               
@@ -84,9 +88,9 @@ import {
   }
   
   const DesktopNav = () => {
-    const linkColor = useColorModeValue('gray.600', 'gray.200');
-    const linkHoverColor = useColorModeValue('gray.800', 'white');
-    const popoverContentBgColor = useColorModeValue('white', 'gray.800');
+    const linkColor = '#d6dde2';
+    const linkHoverColor = '#f08080';
+    const popoverContentBgColor = '#111516';
   
     return (
       <Stack direction={'row'} spacing={4}>
@@ -100,9 +104,12 @@ import {
                   fontSize={'sm'}
                   fontWeight={500}
                   color={linkColor}
+                  rounded={'md'}
+                  _focusVisible={{ boxShadow: '0 0 0 2px #f08080' }}
                   _hover={{
                     textDecoration: 'none',
                     color: linkHoverColor,
+                    bg: '#2c1d21',
                   }}>
                   {navItem.label}
                 </Link>
@@ -138,12 +145,12 @@ import {
         display={'block'}
         p={2}
         rounded={'md'}
-        _hover={{ bg: useColorModeValue('pink.50', 'gray.400') }}>
+        _hover={{ bg: '#2c1d21' }}>
         <Stack direction={'row'} align={'center'}>
           <Box>
             <Text
               transition={'all .3s ease'}
-              _groupHover={{ color: 'pink.400' }}
+              _groupHover={{ color: '#f08080' }}
               fontWeight={500}>
               {label}
             </Text>
@@ -157,7 +164,7 @@ import {
             justify={'flex-end'}
             align={'center'}
             flex={1}>
-            <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
+            <Icon color={'#f08080'} w={5} h={5} as={ChevronRightIcon} />
           </Flex>
         </Stack>
       </Link>
@@ -167,7 +174,7 @@ import {
   const MobileNav = () => {
     return (
       <Stack
-        bg={useColorModeValue('white', 'gray.800')}
+        bg={'#111516'}
         p={4}
         display={{ md: 'none' }}>
         {NAV_ITEMS.map((navItem) => (
@@ -190,10 +197,14 @@ import {
           align={'center'}
           _hover={{
             textDecoration: 'none',
-          }}>
+            bg: '#2c1d21',
+          }}
+          rounded={'md'}
+          px={2}
+          _focusVisible={{ boxShadow: '0 0 0 2px #f08080' }}>
           <Text
             fontWeight={600}
-            color={useColorModeValue('gray.600', 'gray.200')}>
+            color={'#d6dde2'}>
             {label}
           </Text>
           {children && (
@@ -213,7 +224,7 @@ import {
             pl={4}
             borderLeft={1}
             borderStyle={'solid'}
-            borderColor={useColorModeValue('gray.200', 'gray.700')}
+            borderColor={'#353033'}
             align={'start'}>
             {children &&
               children.map((child) => (

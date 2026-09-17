@@ -7,7 +7,6 @@ import {
   Text,
   VisuallyHidden,
   
-  useColorModeValue,
   Image,
   Grid,
   GridItem
@@ -56,7 +55,9 @@ const SocialButton = ({
 }) => {
   return (
     <chakra.button
-      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+      bg={'#24282b'}
+      color={'#d6dde2'}
+      _focusVisible={{ boxShadow: '0 0 0 2px #f08080', outline: 'none' }}
       rounded={'full'}
       w={8}
       h={8}
@@ -68,7 +69,8 @@ const SocialButton = ({
       justifyContent={'center'}
       transition={'background 0.3s ease'}
       _hover={{
-        bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+        bg: '#58262d',
+        color: '#ffffff',
       }}>
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}
@@ -90,15 +92,16 @@ export default function LargeWithNewsletter() {
   
   return (
     <Box
-      bg={useColorModeValue('gray.50', 'gray.900')}
-      color={useColorModeValue('gray.700', 'gray.200')}>
+      bg={'#111516'}
+      borderTop={'1px solid #353033'}
+      color={'#d6dde2'}>
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid
           templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }}
           spacing={8}>
           <Stack spacing={6}>
             <Box>
-              <Logo color={useColorModeValue('gray.700', 'white')} />
+              <Logo color={'#d6dde2'} />
             </Box>
             <Text fontSize={'sm'}>
               © {year} Akash Patil. All rights reserved
@@ -146,15 +149,15 @@ export default function LargeWithNewsletter() {
             <Stack direction={'row'}>
               <Input
                 placeholder={'Your email address'}
-                bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+                bg={'#24282b'}
                 border={0}
                 _focus={{
                   bg: 'whiteAlpha.300',
                 }}
               />
               <IconButton
-                bg={useColorModeValue('green.400', 'green.800')}
-                color={useColorModeValue('white', 'gray.800')}
+                bg={'#f08080'}
+                color={'#111516'}
                 _hover={{
                   bg: 'green.600',
                 }}
